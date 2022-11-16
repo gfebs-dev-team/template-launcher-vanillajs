@@ -56,6 +56,13 @@ function Terminate() {
 	terminateCommunication();
 }
 
+function doExit() {
+	storeDataValue("cmi.exit", "");
+	storeDataValue("adl.nav.request", "exitAll");
+
+	Terminate();
+}
+
 /*******************************************************************************
 **
 ** Sets the SCO completion status to incomplete.
@@ -88,3 +95,4 @@ function SetComplete (){
 function DisplayPage(location) {
     return 0;
 }
+

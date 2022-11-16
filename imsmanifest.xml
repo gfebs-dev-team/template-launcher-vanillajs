@@ -6,9 +6,9 @@
 </metadata>
 <organizations default="ItCM">
 	<organization identifier="ItCM" adlseq:objectivesGlobalToSystem="false">
-		<title>Introduction to Cost Management</title>
+		<title>L210E Launcher Redirect</title>
 		<item identifier="L210EItCM" identifierref="L210EItCM_SCO">
-			<title>L210E: Introduction to Cost Management</title>
+			<title>L210E Launcher Redirect</title>
 			<imsss:sequencing>
 				<imsss:objectives>
 						<imsss:primaryObjective satisfiedByMeasure="false" objectiveID="scoObj"></imsss:primaryObjective>
