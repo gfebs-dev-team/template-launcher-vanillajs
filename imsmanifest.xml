@@ -1,0 +1,48 @@
+<manifest>
+<metadata>
+	<schema>ADL SCORM</schema>
+	<schemaversion>2004 3rd Edition</schemaversion>
+	<adlcp:location>L210E_course.xml</adlcp:location>
+</metadata>
+<organizations default="ItCM">
+	<organization identifier="ItCM" adlseq:objectivesGlobalToSystem="false">
+		<title>Introduction to Cost Management</title>
+		<item identifier="L210EItCM" identifierref="L210EItCM_SCO">
+			<title>L210E: Introduction to Cost Management</title>
+			<imsss:sequencing>
+				<imsss:objectives>
+						<imsss:primaryObjective satisfiedByMeasure="false" objectiveID="scoObj"></imsss:primaryObjective>
+				</imsss:objectives>
+			</imsss:sequencing>
+		</item>
+<imsss:sequencing>
+	<imsss:rollupRules>
+		<imsss:rollupRule childActivitySet="all">
+			<imsss:rollupConditions conditionCombination="all">
+				<imsss:rollupCondition condition="satisfied"/>
+			</imsss:rollupConditions>
+			<imsss:rollupAction action="completed"/>
+		</imsss:rollupRule>
+		<imsss:rollupRule childActivitySet="all">
+			<imsss:rollupConditions conditionCombination="all">
+				<imsss:rollupCondition condition="satisfied"/>
+			</imsss:rollupConditions>
+			<imsss:rollupAction action="satisfied"/>
+		</imsss:rollupRule>
+		<imsss:rollupRule childActivitySet="any">
+			<imsss:rollupConditions conditionCombination="any">
+				<imsss:rollupCondition operator="not" condition="satisfied"/></imsss:rollupConditions>
+			<imsss:rollupAction action="incomplete"/>
+		</imsss:rollupRule>
+	</imsss:rollupRules>
+</imsss:sequencing>
+	</organization>
+</organizations>
+<resources>
+	<resource identifer="ItCM_SCO" adlcp:scormType="sco" href="index.html">
+		<file href="/assets/APIWrapper.js"/>
+		<file href="/assets/scormFunctions.js"/>
+		<file href="index.html"/>
+	</resource>
+</resources>
+</manifest>

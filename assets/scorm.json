@@ -1,0 +1,62 @@
+{
+    "general": {
+        "course_code":"L210E",
+        "course_title": "Introduction to Cost Management",
+        "language": "en",
+        "description": "Basic sample description",
+        "keywords": ["keyword1", "keyword2", "keyword3"],
+        "aggregation_level": "2"
+    },
+    "lifecycle": {
+        "version": 1.0,
+        "status": "final",
+        "contribute": {
+            "entity": "BEGIN:VCARD\n\t\t\tVERSION:2.1\n\t\t\tN:U.S. Army Infantry SchoolORG:U.S. Army;Army Infantry School;Fort Benning\n\t\t\tNOTE:071 ADR;DOM;\n\t\t\tWORK:Suite 650;6751 Constitution Loop;Fort Benning;GA;31905- 4502;U.S.\n\t\t\tEMAIL;INTERNET:soldierinfo@benning.army.mil\n\t\t\tEND:VCARD",
+            "date": "2022-09-20 10:27:21.240752"
+        }
+    },
+    "technical": {
+        "format": ["text/html", "text/js", "text/css" , "image/jpeg", "image/png", "video/mp4"]
+    },
+    "classifications": [
+        {
+            "value": "discipline",
+            "description": "Classification Description",
+            "keyword": "Keyword"
+        },
+        {
+            "value": "discipline",
+            "description": "Classification Description",
+            "keyword": "Keyword"
+        },{
+            "value": "discipline",
+            "description": "Classification Description",
+            "keyword": "Keyword"
+        },
+        {
+            "value": "educational objective",
+            "description": "Classification Description",
+            "keyword": "Keyword"
+        },
+        {
+            "value": "educational objective",
+            "description": "Classification Description",
+            "keyword": "Keyword"
+        },
+        {
+            "value": "accesibility restrictions",
+            "description": "508 Compliant",
+            "keyword": "508"
+        },
+        {
+            "value": "security level",
+            "description": "XXX",
+            "keyword": "XXX"
+        },
+        {
+            "value": "collection",
+            "description": "Classification Description",
+            "keyword": "Keyword"
+        }
+    ]
+}
