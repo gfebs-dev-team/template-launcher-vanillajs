@@ -46,21 +46,32 @@ function Initialize() {
         //Save route and state for bookmark
 	}
 	// present page to learner
-	DisplayPage( location );
+	console.log("Initialized")
 }
 
 function Terminate() {
     if(retrieveDataValue("cmi.completion_status") == "incomplete") {
         persistData();
-    }
+		storeDataValue("cmi.success_status", "unknown");
+		storeDataValue("adl.nav.request", "suspendAll");
+    } else {
+		storeDataValue("cmi.success_status", "passed");
+	}
 	terminateCommunication();
 }
 
 function doExit() {
-	storeDataValue("cmi.exit", "");
+	storeDataValue("cmi.exit", "normal");
 	storeDataValue("adl.nav.request", "exitAll");
 
 	Terminate();
+	console.log("Did Exit")
+}
+
+function openLRC() {
+	const newWindow = window.open("https://ssilrc.army.mil/resources/FMS/GFEBS/GFEBSLegacy/Launchers/L210E/html/index.html", "LRC", "width: 860, height: 600");
+	newWindow.focus();
+	SetComplete();
 }
 
 /*******************************************************************************
@@ -90,6 +101,7 @@ function SetIncomplete (){
 *******************************************************************************/
 function SetComplete (){
 	storeDataValue( "cmi.completion_status", "completed" );
+	console.log("Set Complete")
 }
 
 function DisplayPage(location) {

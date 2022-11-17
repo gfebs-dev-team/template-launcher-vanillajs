@@ -1,4 +1,10 @@
-<manifest>
+<manifest identifier="com.scorm.l210la.20043rd" version="1"
+xmlns="http://www.imsglobal.org/xsd/imscp_v1p1"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_v1p3"
+xmlns:adlseq="http://www.adlnet.org/xsd/adlseq_v1p3"
+xmlns:adlnav="http://www.adlnet.org/xsd/adlnav_v1p3"
+xmlns:imsss="http://www.imsglobal.org/xsd/imsss">
 <metadata>
 	<schema>ADL SCORM</schema>
 	<schemaversion>2004 3rd Edition</schemaversion>
@@ -15,31 +21,31 @@
 				</imsss:objectives>
 			</imsss:sequencing>
 		</item>
-<imsss:sequencing>
-	<imsss:rollupRules>
-		<imsss:rollupRule childActivitySet="all">
-			<imsss:rollupConditions conditionCombination="all">
-				<imsss:rollupCondition condition="satisfied"/>
-			</imsss:rollupConditions>
-			<imsss:rollupAction action="completed"/>
-		</imsss:rollupRule>
-		<imsss:rollupRule childActivitySet="all">
-			<imsss:rollupConditions conditionCombination="all">
-				<imsss:rollupCondition condition="satisfied"/>
-			</imsss:rollupConditions>
-			<imsss:rollupAction action="satisfied"/>
-		</imsss:rollupRule>
-		<imsss:rollupRule childActivitySet="any">
-			<imsss:rollupConditions conditionCombination="any">
-				<imsss:rollupCondition operator="not" condition="satisfied"/></imsss:rollupConditions>
-			<imsss:rollupAction action="incomplete"/>
-		</imsss:rollupRule>
-	</imsss:rollupRules>
-</imsss:sequencing>
+		<imsss:sequencing>
+			<imsss:rollupRules>
+				<imsss:rollupRule childActivitySet="all">
+					<imsss:rollupConditions conditionCombination="all">
+						<imsss:rollupCondition condition="satisfied"/>
+					</imsss:rollupConditions>
+					<imsss:rollupAction action="completed"/>
+				</imsss:rollupRule>
+				<imsss:rollupRule childActivitySet="all">
+					<imsss:rollupConditions conditionCombination="all">
+						<imsss:rollupCondition condition="satisfied"/>
+					</imsss:rollupConditions>
+					<imsss:rollupAction action="satisfied"/>
+				</imsss:rollupRule>
+				<imsss:rollupRule childActivitySet="any">
+					<imsss:rollupConditions conditionCombination="any">
+						<imsss:rollupCondition operator="not" condition="satisfied"/></imsss:rollupConditions>
+					<imsss:rollupAction action="incomplete"/>
+				</imsss:rollupRule>
+			</imsss:rollupRules>
+		</imsss:sequencing>
 	</organization>
 </organizations>
 <resources>
-	<resource identifer="ItCM_SCO" adlcp:scormType="sco" href="index.html">
+	<resource identifer="ItCM_SCO" type="webcontent" adlcp:scormType="sco" href="index.html">
 		<file href="/assets/APIWrapper.js"/>
 		<file href="/assets/scormFunctions.js"/>
 		<file href="index.html"/>

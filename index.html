@@ -1,16 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="./assets/APIWrapper.js" type="text/javascript"></script>
-    <script src="./assets/scormFunctions.js" type="text/javascript"></script>
-    <title>L210E Launcher Redirect</title>
-    <!--Change this name for each different course ^ -->
-  </head>
-  <body onload="javascript:Initialize()">
-    <button onclick="javascript:doExit()">Exit</button>
-    <a href="https://ssilrc.army.mil/resources/FMS/GFEBS/GFEBSLegacy/Launchers/L210E/html/index.html" target="_blank" onclick="javascript:SetComplete()">Click Here to head to LRC</a>
-    <script></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="./assets/APIWrapper.js" type="text/javascript"></script>
+  <script src="./assets/scormFunctions.js" type="text/javascript"></script>
+  <title>L210E Launcher Redirect</title>
+  <style>
+    body {
+      min-height: 100vh;
+      color: rgb(255, 255, 255);
+      background: rgb(42 42 42);
+      transition: color 0.5s, background-color 0.5s;
+      line-height: 1.6;
+      font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+        Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+      font-size: 13px;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .boxed {
+      width: 800px;
+      height: 650px;
+      background-color: rgb(45 76 83);
+      display: flex;
+      margin: auto;
+      border-radius: 1%;
+      flex-direction: column;
+    }
+
+    .homeHeader {
+      height: 50px;
+      background-color: rgb(30 163 222);
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 2%;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+
+    .homeTitle {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h2 {
+      font-weight: bold;
+      margin: 1%;
+    }
+
+    h1 {
+      font-weight: bold;
+      margin-bottom: 0%;
+      margin: 2% 2% 0% 2%;
+    }
+
+    .homeImage {
+      display: flex;
+      justify-content: center;
+      height: 180px;
+    }
+
+    .homeParagraph {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin: 1% 10%;
+      align-items: center;
+    }
+
+    .homeNote {
+      color: rgb(247 222 154);
+      font-weight: bold;
+    }
+
+    span {
+      text-align: center;
+    }
+
+    .buttonDefault {
+      padding:2%;
+      margin:1%;
+    background-color: rgb(36	46	44	);
+    color: white;
+    border-radius: 5px;
+  }
+  </style>
+  <!--Change this name for each different course ^ -->
+</head>
+
+<body onload="javascript:Initialize()">
+  <div class="boxed">
+    <div class="homeHeader">
+      <button onclick="javascript:doExit()">Exit</button>
+    </div>
+    <div class="homeTitle">
+      <h1>Financial Management School</h1>
+      <h2>L210E Redirect Launcher</h2>
+    </div>
+
+    <div class="homeParagraph">
+      <span>
+        After completing this course, review all the modules and test for the <br />
+        GFEBS Financials Process Overview Post Assessment.
+      </span>
+      <span class="homeNote">
+        Note: This will launch module content and take you to an external .Mil website.
+      </span>
+    </div>
+
+    <button class="buttonDefault"
+      onclick="javascript:openLRC()">Click Here to head to LRC</button>
+  </div>
+
+</body>
+
 </html>

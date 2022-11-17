@@ -16,7 +16,7 @@
         }
     },
     "technical": {
-        "format": ["text/html", "text/js", "text/css" , "image/jpeg", "image/png", "video/mp4"]
+        "format": ["text/html", "text/js"]
     },
     "classifications": [
         {
