@@ -5,11 +5,13 @@ xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_v1p3"
 xmlns:adlseq="http://www.adlnet.org/xsd/adlseq_v1p3"
 xmlns:adlnav="http://www.adlnet.org/xsd/adlnav_v1p3"
 xmlns:imsss="http://www.imsglobal.org/xsd/imsss"
-	  xsi:schemaLocation="http://www.imsglobal.org/xsd/imscp_v1p1 imscp_v1p1.xsd
-                              http://www.adlnet.org/xsd/adlcp_v1p3 adlcp_v1p3.xsd
-                              http://www.adlnet.org/xsd/adlseq_v1p3 adlseq_v1p3.xsd
-                              http://www.adlnet.org/xsd/adlnav_v1p3 adlnav_v1p3.xsd
-                              http://www.imsglobal.org/xsd/imsss imsss_v1p0.xsd">
+xmlns:lom="http://ltsc.ieee.org/xsd/LOM"
+xsi:schemaLocation="http://www.imsglobal.org/xsd/imscp_v1p1 imscp_v1p1.xsd
+					http://www.adlnet.org/xsd/adlcp_v1p3 adlcp_v1p3.xsd
+					http://www.adlnet.org/xsd/adlseq_v1p3 adlseq_v1p3.xsd
+					http://www.adlnet.org/xsd/adlnav_v1p3 adlnav_v1p3.xsd
+					http://www.imsglobal.org/xsd/imsss imsss_v1p0.xsd
+					http://ltsc.ieee.org/xsd/LOM lom.xsd">
 <metadata>
 	<schema>ADL SCORM</schema>
 	<schemaversion>2004 3rd Edition</schemaversion>
@@ -50,7 +52,7 @@ xmlns:imsss="http://www.imsglobal.org/xsd/imsss"
 	</organization>
 </organizations>
 <resources>
-	<resource identifer="ItCM_SCO" type="webcontent" adlcp:scormType="sco" href="index.html">
+	<resource identifier="ItCM_SCO" type="webcontent" adlcp:scormType="sco" href="index.html">
 		<file href="/assets/APIWrapper.js"/>
 		<file href="/assets/scormFunctions.js"/>
 		<file href="index.html"/>
