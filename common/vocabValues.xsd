@@ -248,6 +248,7 @@
          <xs:enumeration value="skill level"/>
          <xs:enumeration value="security level"/>
          <xs:enumeration value="competency"/>
+         <xs:enumeration value="collection"/>
       </xs:restriction>
    </xs:simpleType>
 

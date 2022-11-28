@@ -18,7 +18,7 @@
 	<aggregationLevel>
 		<source>LOMv1.0</source>
 		<value>2</value>
-	<aggregationLevel>
+	</aggregationLevel>
 </general>
 <lifeCycle>
 	<version>
@@ -29,8 +29,10 @@
 		<value>final</value>
 	</status>
 	<contribute>
-		<source>LOMv1.0</source>
+		<role>
+			<source>LOMv1.0</source>
 		<value>publisher</value>
+		</role>
 		<entity>
 			BEGIN:VCARD
 			VERSION:2.1
@@ -41,7 +43,7 @@
 			END:VCARD
 		</entity>
 		<date>
-			<datetime>2022-09-20 10:27:21.240752</datetime>
+			<dateTime>2022-09-20</dateTime>
 		</date>
 	</contribute>
 </lifeCycle>
@@ -70,7 +72,9 @@
 	</cost>
 	<copyrightAndOtherRestrictions>
 		<source>LOMv1.0</source>
-		<value>no</value>/n/t</copyrightAndOtherRestrictions>/n</rights>
+		<value>no</value>
+	</copyrightAndOtherRestrictions>
+</rights>
 <classification>
 	<purpose>
 		<source>LOMv1.0</source>
@@ -134,7 +138,7 @@
 <classification>
 	<purpose>
 		<source>LOMv1.0</source>
-		<value>accesibility restrictions</value>
+		<value>accessibility restrictions</value>
 	</purpose>
 	<description>
 		<string>508 Compliant</string>
