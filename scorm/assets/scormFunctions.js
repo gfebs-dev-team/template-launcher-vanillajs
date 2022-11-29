@@ -50,7 +50,8 @@ function Initialize() {
 
         //Save route and state for bookmark
 	} else {
-		//currentPage = location;
+		CurrentPage = location;
+		storeDataValue("cmi.location", CurrentPage);
 	}
 	// present page to learner
 	console.log("Initialized")
@@ -58,10 +59,8 @@ function Initialize() {
 
 function Terminate() {
     if(retrieveDataValue("cmi.completion_status") == "incomplete") {
-        storeDataValue("cmi.suspend_data", "suspended");
 		storeDataValue("cmi.success_status", "unknown");
 		storeDataValue("adl.nav.request", "suspendAll");
-		persistData();
     } else {
 		storeDataValue("cmi.success_status", "passed");
 	}
@@ -76,6 +75,7 @@ function doExit() {
 	storeDataValue("cmi.session_time", scormTime);
 	storeDataValue("cmi.exit", "normal");
 	storeDataValue("adl.nav.request", "exitAll");
+	persistData();
 
 	Terminate();
 	console.log("Did Exit")
@@ -84,6 +84,8 @@ function doExit() {
 function openLRC() {
 	const newWindow = window.open("https://ssilrc.army.mil/resources/FMS/GFEBS/GFEBSLegacy/Launchers/L210E/html/index.html", "LRC", "width: 860, height: 600");
 	//storeDataValue("cmi.location", CurrentPage);
+	storeDataValue("cmi.suspend_data", "suspended");
+	persistData();
 	newWindow.focus();
 	SetComplete();
 }
