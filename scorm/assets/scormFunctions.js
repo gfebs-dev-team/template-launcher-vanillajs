@@ -3,6 +3,9 @@ var CurrentPage;
 // Track initialized status so it is only called once
 var AlreadyInitialized = false;
 
+let startTime
+let endTime;
+
 function CallInitialize(){
 	if(!AlreadyInitialized){
 		initializeCommunication();
@@ -30,10 +33,12 @@ function Initialize() {
 	storeDataValue( "cmi.exit","suspend" );
 
 	// check for resumed entry state
-	var entryMode = retrieveDataValue( "cmi.entry" );
+	let entryMode = retrieveDataValue( "cmi.entry" );
 
 	// set a local variable to page 1
-	var location = 1;
+	let location = 1;
+
+	startTime = Date.now();
 
 	// check whether resuming SCO
 	if (entryMode == "resume") {
@@ -41,9 +46,11 @@ function Initialize() {
 		location = retrieveDataValue( "cmi.location" );
 
 		// get the Error code from the last call
-		var errorCode = retrieveLastErrorCode();
+		let errorCode = retrieveLastErrorCode();
 
         //Save route and state for bookmark
+	} else {
+		//currentPage = location;
 	}
 	// present page to learner
 	console.log("Initialized")
@@ -51,9 +58,10 @@ function Initialize() {
 
 function Terminate() {
     if(retrieveDataValue("cmi.completion_status") == "incomplete") {
-        persistData();
+        storeDataValue("cmi.suspend_data", "suspended");
 		storeDataValue("cmi.success_status", "unknown");
 		storeDataValue("adl.nav.request", "suspendAll");
+		persistData();
     } else {
 		storeDataValue("cmi.success_status", "passed");
 	}
@@ -61,6 +69,11 @@ function Terminate() {
 }
 
 function doExit() {
+	/*endTime = Date.now();
+	let sessionTime = endTime - startTime; 
+  	sessionTime = Math.round(sessionTime/100)/10;
+	
+	storeDataValue("cmi.session_time", `P${sessionTime}S`);*/
 	storeDataValue("cmi.exit", "normal");
 	storeDataValue("adl.nav.request", "exitAll");
 
@@ -70,6 +83,7 @@ function doExit() {
 
 function openLRC() {
 	const newWindow = window.open("https://ssilrc.army.mil/resources/FMS/GFEBS/GFEBSLegacy/Launchers/L210E/html/index.html", "LRC", "width: 860, height: 600");
+	//storeDataValue("cmi.location", CurrentPage);
 	newWindow.focus();
 	SetComplete();
 }

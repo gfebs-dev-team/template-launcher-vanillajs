@@ -2,7 +2,7 @@ const scorm = require('./scorm.json');
 const fs = require('fs');
 const identifier = scorm.general.course_title.split(" ").map((n) => n[0]).join("");
 const manPath = './scorm/imsmanifest.xml';
-const mdPath = scorm.general.course_code + '_course.xml';
+const mdPath = scorm.general.course_code + '-METADATA.xml';
 
 /**
  * A function that generates Army SCORM compliant manifest and metadata files
@@ -37,7 +37,7 @@ function generateManifest() {
     <metadata>
         <schema>ADL SCORM</schema>
         <schemaversion>2004 3rd Edition</schemaversion>
-        <adlcp:location>${mdPath}_course.xml'</adlcp:location>
+        <adlcp:location>${mdPath}</adlcp:location>
     </metadata>
     <organizations default="${identifier}">
         <organization identifier="${identifier}" adlseq:objectivesGlobalToSystem="false">
@@ -75,6 +75,7 @@ function generateManifest() {
     </organizations>
     <resources>
         <resource identifier="${identifier}_SCO" type="webcontent" adlcp:scormType="sco" href="index.html">${resources}
+        <file href="index.html"/>
         </resource>
     </resources>
     </manifest>`
