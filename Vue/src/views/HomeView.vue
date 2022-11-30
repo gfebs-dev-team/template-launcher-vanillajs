@@ -2,7 +2,7 @@
 import Close from '../components/Close.vue';
 import Window from '../components/Window.vue';
 import WindowHeader from '../components/WindowHeader.vue';
-import {openLRC} from '../helpers/scormFunctions';
+import { openLRC } from '../helpers/scormFunctions';
 </script>
 
 <template>

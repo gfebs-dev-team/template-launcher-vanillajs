@@ -1,6 +1,6 @@
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
-import  scormJS from './helpers/scormFunctions';
+import * as scormJS from './helpers/scormFunctions';
 
 import App from './App.vue'
 import router from './router'

@@ -49,7 +49,7 @@ var terminated = "false";
 // local variable used by the content developer to debug
 // This should be set to true during development to find errors.  However,
 // This should be set to false prior to deployment.
-var _debug = false;
+var _debug = true;
 
 /*******************************************************************************
 **
@@ -440,4 +440,4 @@ function displayErrorInfo( errCode )
    }
 }
 
-export default {initializeCommunication, terminateCommunication, retrieveDataValue, storeDataValue, persistData}
+export {initializeCommunication, terminateCommunication, retrieveDataValue, storeDataValue, persistData, retrieveErrorInfo, retrieveDiagnosticInfo, retrieveLastErrorCode, displayErrorInfo}

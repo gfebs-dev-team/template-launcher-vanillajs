@@ -12,7 +12,7 @@
         "status": "final",
         "contribute": {
             "entity": "BEGIN:VCARD\n\t\t\tVERSION:2.1\n\t\t\tN:U.S. Army Infantry SchoolORG:U.S. Army;Army Infantry School;Fort Benning\n\t\t\tNOTE:071 ADR;DOM;\n\t\t\tWORK:Suite 650;6751 Constitution Loop;Fort Benning;GA;31905- 4502;U.S.\n\t\t\tEMAIL;INTERNET:soldierinfo@benning.army.mil\n\t\t\tEND:VCARD",
-            "date": "2022-09-20 10:27:21.240752"
+            "date": "2022-09-20"
         }
     },
     "technical": {
@@ -44,7 +44,7 @@
             "keyword": "Keyword"
         },
         {
-            "value": "accesibility restrictions",
+            "value": "accessibility restrictions",
             "description": "508 Compliant",
             "keyword": "508"
         },

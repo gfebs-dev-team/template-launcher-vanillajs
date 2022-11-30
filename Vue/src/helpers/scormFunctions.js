@@ -1,8 +1,9 @@
-import scorm from './APIWrapper';
+import * as scorm from './APIWrapper';
+
 // Keep track of location in content by div number
-var CurrentPage;
+let CurrentPage;
 // Track initialized status so it is only called once
-var AlreadyInitialized = false;
+let AlreadyInitialized = false;
 
 let startTime;
 let endTime;
@@ -51,7 +52,7 @@ function Initialize() {
 
         //Save route and state for bookmark
 	} else {
-		//currentPage = location;
+		CurrentPage = location;
 	}
 	// present page to learner
 	console.log("Initialized")
@@ -69,7 +70,7 @@ function Terminate() {
 	scorm.terminateCommunication();
 }
 
-export function doExit() {
+function doExit() {
 	endTime = new Date();
 	let totalMilliseconds = (endTime.getTime() - startTime.getTime());
 	let scormTime = ConvertMilliSecondsIntoSCORM2004Time(totalMilliseconds);
@@ -82,9 +83,9 @@ export function doExit() {
 	console.log("Did Exit")
 }
 
-export function openLRC() {
+function openLRC() {
 	const newWindow = window.open("https://ssilrc.army.mil/resources/FMS/GFEBS/GFEBSLegacy/Launchers/L210E/html/index.html", "LRC", "width: 860, height: 600");
-	//storeDataValue("cmi.location", CurrentPage);
+	scorm.storeDataValue("cmi.location", CurrentPage);
 	newWindow.focus();
 	SetComplete();
 }
@@ -207,4 +208,4 @@ function ConvertMilliSecondsIntoSCORM2004Time(intTotalMilliseconds){
 	return ScormTime;
 }
 
-export default {ConvertMilliSecondsIntoSCORM2004Time, SetComplete, SetIncomplete, openLRC, doExit, Initialize, Terminate}
+export {ConvertMilliSecondsIntoSCORM2004Time, SetComplete, SetIncomplete, openLRC, doExit, Initialize, Terminate}
