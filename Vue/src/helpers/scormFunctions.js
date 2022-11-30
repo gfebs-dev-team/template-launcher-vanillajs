@@ -38,21 +38,21 @@ function Initialize() {
 	let entryMode = scorm.retrieveDataValue( "cmi.entry" );
 
 	// set a local variable to page 1
-	let location = 1;
+	//let location = 1;
 
 	startTime = new Date;
 
 	// check whether resuming SCO
 	if (entryMode == "resume") {
 		// check if a prior location was set
-		location = scorm.retrieveDataValue( "cmi.location" );
+		//location = scorm.retrieveDataValue( "cmi.location" );
 
 		// get the Error code from the last call
 		let errorCode = scorm.retrieveLastErrorCode();
 
         //Save route and state for bookmark
 	} else {
-		CurrentPage = location;
+		//CurrentPage = location;
 	}
 	// present page to learner
 	console.log("Initialized")
@@ -85,7 +85,7 @@ function doExit() {
 
 function openLRC() {
 	const newWindow = window.open("https://ssilrc.army.mil/resources/FMS/GFEBS/GFEBSLegacy/Launchers/L210E/html/index.html", "LRC", "width: 860, height: 600");
-	scorm.storeDataValue("cmi.location", CurrentPage);
+	//scorm.storeDataValue("cmi.location", CurrentPage);
 	newWindow.focus();
 	SetComplete();
 }
