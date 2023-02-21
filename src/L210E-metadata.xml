@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+    <lom xmlns="http://ltsc.ieee.org/xsd/LOM" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ltsc.ieee.org/xsd/LOM lomStrict.xsd">
+    <general>
+        <identifier>
+            <catalog>ATIA</catalog>
+            <entry>TBD</entry>
+        </identifier>
+        <title>
+            <string>L210E: Financials Process Overview</string>
+        </title>
+        <language>en</language>
+        <description>
+            <string>The L210E Financial Management Process Overview course provides high level information on the processes and tasks of the Manage General Ledger sub-processes. It is intended to be conceptual in nature and provides GFEBS users with an overview of the GFEBS Financial Management Process.</string>
+        </description>
+        
+	<keyword><string>business</string></keyword>
+	<keyword><string>GFEBS</string></keyword>
+	<keyword><string>Integrated</string></keyword>
+	<keyword><string>L210E</string></keyword>
+	<keyword><string>Overview</string></keyword>
+	<keyword><string>process</string></keyword>
+	<keyword><string>Process</string></keyword>
+        <aggregationLevel>
+            <source>LOMv1.0</source>
+            <value>2</value>
+        </aggregationLevel>
+    </general>
+    <lifeCycle>
+        <version>
+            <string>1</string>
+        </version>
+        <status>
+            <source>LOMv1.0</source>
+            <value>final</value>
+        </status>
+        <contribute>
+            <role>
+                <source>LOMv1.0</source>
+            <value>publisher</value>
+            </role>
+            <entity>
+                BEGIN:VCARD
+				FN:GFEBS E-Learning Team
+				ORG: Eagle Harbor/Panum
+				END:VCARD
+            </entity>
+            <date>
+                <dateTime>2023-01-25</dateTime>
+            </date>
+        </contribute>
+    </lifeCycle>
+    <metaMetadata>
+        <identifier>
+            <catalog>TBD</catalog>
+            <entry>TBD</entry>
+        </identifier>
+        <metadataSchema>LOMv1.0</metadataSchema>
+        <metadataSchema>SCORM_CAM_v1.3</metadataSchema>
+        <metadataSchema>ADLv1.0</metadataSchema>
+        <language>en</language>
+    </metaMetadata>
+    <technical>
+	<format>text/html</format>
+	<format>text/js</format>
+    </technical>
+    <rights>
+        <cost>
+            <source>LOMv1.0</source>
+            <value>no</value>
+        </cost>
+        <copyrightAndOtherRestrictions>
+            <source>LOMv1.0</source>
+            <value>no</value>
+        </copyrightAndOtherRestrictions>
+    </rights>
+    <classification>
+        <purpose>
+            <source>LOMv1.0</source>
+            <value>discipline</value>
+        </purpose>
+        <description>
+            <string>None</string>
+        </description>
+        <keyword>
+            <string>none</string>
+        </keyword>
+    </classification>
+    <classification>
+        <purpose>
+            <source>LOMv1.0</source>
+            <value>educational objective</value>
+        </purpose>
+        <description>
+            <string>The L210E Financial Management Process Overview course provides high level information on the processes and tasks of the Manage General Ledger sub-processes. It is intended to be conceptual in nature and provides GFEBS users with an overview of the GFEBS Financial Management Process.</string>
+        </description>
+        <keyword>
+            <string>GFEBS</string>
+        </keyword>
+    </classification>
+    <classification>
+        <purpose>
+            <source>LOMv1.0</source>
+            <value>educational objective</value>
+        </purpose>
+        <description>
+            <string>Level 01</string>
+        </description>
+        <keyword>
+            <string>Level 01</string>
+        </keyword>
+    </classification>
+    <classification>
+        <purpose>
+            <source>LOMv1.0</source>
+            <value>accessibility restrictions</value>
+        </purpose>
+        <description>
+            <string>508 Compliant</string>
+        </description>
+        <keyword>
+            <string>508</string>
+        </keyword>
+    </classification>
+    <classification>
+        <purpose>
+            <source>LOMv1.0</source>
+            <value>security level</value>
+        </purpose>
+        <description>
+            <string>FD1</string>
+        </description>
+        <keyword>
+            <string>FD1</string>
+        </keyword>
+    </classification>
+    
+    </lom>
+    

@@ -1,0 +1,48 @@
+{
+    "general": {
+        "course_code":"L210E",
+        "course_title": "L210E: Financials Process Overview",
+        "language": "en",
+        "description": "The L210E Financial Management Process Overview course provides high level information on the processes and tasks of the Manage General Ledger sub-processes. It is intended to be conceptual in nature and provides GFEBS users with an overview of the GFEBS Financial Management Process.",
+        "keywords": ["business", "GFEBS", "Integrated", "L210E", "Overview", "process", "Process"],
+        "aggregation_level": "2"
+    }, 
+    "lifecycle": {
+        "version": 1.0,
+        "status": "final",
+        "contribute": {
+            "entity": "BEGIN:VCARD\n\t\t\t\tFN:GFEBS E-Learning Team\n\t\t\t\tORG: Eagle Harbor/Panum\n\t\t\t\tEND:VCARD",
+            "date": "2023-01-25"
+        }
+    },
+    "technical": {
+        "format": ["text/html", "text/js"]
+    },
+    "classifications": [
+        {
+            "value": "discipline",
+            "description": "None",
+            "keyword": "none"
+        },
+        {
+            "value": "educational objective",
+            "description": "The L210E Financial Management Process Overview course provides high level information on the processes and tasks of the Manage General Ledger sub-processes. It is intended to be conceptual in nature and provides GFEBS users with an overview of the GFEBS Financial Management Process.",
+            "keyword": "GFEBS"
+        },
+        {
+            "value": "educational objective",
+            "description": "Level 01",
+            "keyword": "Level 01"
+        },
+        {
+            "value": "accessibility restrictions",
+            "description": "508 Compliant",
+            "keyword": "508"
+        },
+        {
+            "value": "security level",
+            "description": "FD1",
+            "keyword": "FD1"
+        }
+    ]
+}
