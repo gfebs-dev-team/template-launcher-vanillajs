@@ -73,7 +73,12 @@ function doExit() {
 	let scormTime = ConvertMilliSecondsIntoSCORM2004Time(totalMilliseconds);
 	
 	storeDataValue("cmi.session_time", scormTime);
-	storeDataValue("cmi.exit", "normal");
+	if(retrieveDataValue( "cmi.completion_status" ) == "unknown") {
+		storeDataValue("cmi.exit", "suspend");
+	} else {
+		storeDataValue("cmi.exit", "normal");
+	}
+	
 	storeDataValue("adl.nav.request", "exitAll");
 	persistData();
 
@@ -81,8 +86,10 @@ function doExit() {
 	console.log("Did Exit")
 }
 
-function openLRC(link, name) {
-	const newWindow = window.open(link, name, "width: 860, height: 600");
+let newWindow;
+
+function openLRC(link) {
+	newWindow = window.open(link, '_blank', "width=1200px, height=900px, location=yes, status=yes");
 	//storeDataValue("cmi.location", CurrentPage);
 	storeDataValue("cmi.suspend_data", "suspended");
 	persistData();
