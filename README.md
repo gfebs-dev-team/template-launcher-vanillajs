@@ -33,7 +33,7 @@ For each link on the launcher, change `<LINK_HERE>` to the intended URL and `<MO
 
 
 ### **Build**
-To package for ALMS, run `/public/scormParser.js` then, zip the files ***inside*** of `/src/` 
+To package for ALMS, run `/public/scormParser.js` then, zip the files ***inside*** of `/src/`. Then rename the zip file `GFEBS <COURSE_CODE> <COURSE_TITLE> - Training Content`.
 
 ## Author and acknowledgements
 - APIWrapper.js and scormJS.js provided by ADL registry
