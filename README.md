@@ -14,12 +14,12 @@ Download the latest release and modify the following files to fit for the releva
 ### **/ public / scorm.json**
 This file contains all metadata for the course to be parsed by `scormParser.js` to create `imsmanifest.xml` and `[course_code]-metadata.xml`
 
-*image here*
+![scorm.json](/public/scormJSON.png)
 
 ### **/ src / index.html**
 This file contains the content for the course landing page. Check the Find & Replace Guide for how to modify this file.
 
-*image here*
+![index.html](/public/index.png)
 
 #### **Links**
 For each link on the launcher, change `<LINK_HERE>` to the intended URL and `<MODULE_TITLE_HERE>` to the intended link text. Repeat for each link and add `style` attributes as necessary.     
