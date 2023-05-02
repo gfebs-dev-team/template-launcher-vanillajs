@@ -1,5 +1,5 @@
-# GFEBS-LRC-Launcher
-GFEBS LRC Launcher is a template for building an army SCORM compliant launcher, geared towards updating GFEBS Legacy DL products.
+# GFEBS-Training-Content-Launcher
+GFEBS Training-Content Launcher is a template for building an army SCORM compliant launcher, geared towards updating GFEBS Legacy DL products.
 
 ## Features
 - automatic imsmanifest and metadata file generation
