@@ -1,5 +1,5 @@
-# GFEBS-Training-Content-Launcher
-GFEBS Training-Content Launcher is a template for building an army SCORM compliant launcher, geared towards updating GFEBS Legacy DL products.
+# Template: Launcher (VanillaJS)
+Boilerplate for creating GFEBs launchers. Intended for legacy browsers.
 
 ## Features
 - automatic imsmanifest and metadata file generation
